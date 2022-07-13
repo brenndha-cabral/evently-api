@@ -1,0 +1,21 @@
+version: "3"
+
+services:
+
+  node:
+    image: node:alpine
+    user: node
+    working_dir: /app
+    volumes:
+      - ./:/app
+    container_name: evently_api
+    tty: true
+    stdin_open: true
+    command: sh -c "npm install && npm start"
+    ports:
+      - ${PORT}:3000
+    environment:
+      DATABASE_HOST: "${DATABASE_HOST}"
+      DATABASE_USER: "${DATABASE_USER}"
+      DATABASE_PASSWORD: "${DATABASE_PASSWORD}"
+      JWT_SECRET: "${JWT_SECRET}"
