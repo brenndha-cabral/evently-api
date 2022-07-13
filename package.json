@@ -26,5 +26,8 @@
     "eslint-plugin-mocha": "^10.0.5",
     "sequelize": "^6.21.3",
     "sequelize-cli": "^6.4.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.19"
   }
 }
