@@ -1,0 +1,20 @@
+{
+  "name": "evently-api",
+  "version": "1.0.0",
+  "description": "Neste projeto foi desenvolvida uma API que se conecta a um banco de dados para gerenciar eventos",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/brenndha-cabral/evently-api.git"
+  },
+  "keywords": [],
+  "author": "Brenndha Cabral",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/brenndha-cabral/evently-api/issues"
+  },
+  "homepage": "https://github.com/brenndha-cabral/evently-api#readme"
+}
