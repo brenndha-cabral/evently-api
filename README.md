@@ -36,3 +36,26 @@ Para acessar a API, é necessário que a pessoa usuária faça login com suas cr
    <img title="Mocha" alt="Mocha" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mocha/mocha-plain.svg">
    <img title="Chai" alt="Chai" height="30" width="30" src="./public/assets/images/chai.png">
 </div>
+
+<h2 id="decisoes">Decisões</h2>
+
+ <img title="ESLint" alt="ESLint" height="20" width="30" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/eslint/eslint-original.svg"> [ESLint](https://eslint.org/)
+
+- O projeto possui regras estritas de ESLint (Airbnb) para TypeScript onde é possível encontrar e corrigir problemas, seguindo boas práticas e padronização.
+
+<img title="Docker" alt="Docker" height="20" width="30" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/docker/docker-original.svg"> [Docker](https://www.docker.com/)
+
+- Utilizar imagens Docker para empacotar toda a aplicação e suas dependências, torna a distribuição mais fácil, segura e padronizada.
+
+<img title="Sequelize" alt="Sequelize" height="20" width="30" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/sequelize/sequelize-original.svg"> [Sequelize](https://sequelize.org/)
+
+- Como uma das bibliotecas de ORM mais conhecidas, o Sequelize foi utilizado nesse projeto pois o código se torna mais legível, extensível e de fácil manutenção.
+
+<img title="PostgreSQL" alt="Sequelize" height="20" width="30" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/postgresql/postgresql-original.svg"> [PostegreSQL](https://postgresql.org/)
+
+- Além da usabilidade simples, ele suporta um intenso fluxo de dados com garantia de estabilidade e segurança.
+
+<img title="JWT" alt="JWT" height="15" width="15" src="./public/assets/images/jwt.png"> [JWT](https://jwt.io/)
+
+- Os JSON Web Tokens representam a autenticação e autorização de forma eficaz e simples.
+
