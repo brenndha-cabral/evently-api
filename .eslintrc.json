@@ -1,0 +1,56 @@
+{
+  "root": true,
+  "env": {
+    "browser": false,
+    "node": true,
+    "es2021": true,
+    "jest": false
+  },
+  "extends": [
+    "airbnb-base",
+    "airbnb-typescript/base",
+    "plugin:@typescript-eslint/recommended",
+    "plugin:mocha/recommended"
+  ],
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "ecmaVersion": 2019,
+    "sourceType": "module",
+    "project": "./tsconfig.json"
+  },
+  "plugins": [
+    "@typescript-eslint",
+    "mocha"
+  ],
+  "rules": {
+    "indent": ["error", 2],
+    "camelcase": "warn",
+    "arrow-parens": [ 2, "always" ],
+    "no-unused-vars": ["error", { "argsIgnorePattern": "^_" }],
+    "max-lines": [ "error", 250 ],
+    "max-params": [ "error", 4 ],
+    "complexity": [ "error", 5 ],
+    "@typescript-eslint/no-unused-vars": [
+      "error",
+      {
+        "argsIgnorePattern": "^_",
+        "ignoreRestSiblings": true
+      }
+    ],
+    "max-lines-per-function": [
+      "error",
+      {
+        "max": 20,
+        "skipBlankLines": true,
+        "skipComments": true
+      }
+    ],
+    "max-len": [
+      "error",
+      100,
+      {
+        "ignoreComments": true
+      }
+    ]
+  }
+}
