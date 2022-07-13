@@ -4,7 +4,12 @@
   "description": "Neste projeto foi desenvolvida uma API que se conecta a um banco de dados para gerenciar eventos",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "prestart": "npx sequelize-cli db:drop && npx sequelize-cli db:create && npx sequelize-cli db:migrate && npx sequelize-cli db:seed:all",
+    "start": "ts-node src/app.ts",
+    "dev": "nodemon --watch \"./src/**\" --ext \"ts,js\" --ignore \"src/**/*.spec.ts,src/**/*.json\" --exec \"ts-node src/app.ts\"",
+    "test": "",
+    "lint": "eslint . --ext .js,.ts",
+    "lint-fix": "npm run lint -- --fix"
   },
   "repository": {
     "type": "git",
