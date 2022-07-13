@@ -63,3 +63,5 @@ Para acessar a API, é necessário que a pessoa usuária faça login com suas cr
 
 <h2 id="documentacao">Documentação</h2>
 
+> :information_source: Acesse [aqui](https://github.com/brenndha-cabral/evently-api/wiki) a documentação deste projeto onde constam mais detalhes sobre os relacionamentos e entidades elaborados, arquitetura de software utilizada e as rotas possíveis para consumo.
+
