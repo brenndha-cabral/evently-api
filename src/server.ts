@@ -13,8 +13,8 @@ app.use(json());
 
 // app.use('insert error middleware');
 
-app.listen(PORT, () => {
-  db.sync()
-    .then(() => console.log(`Connection was successfully established, listening at ${PORT}`))
-    .catch((error) => console.log('Unable to connect to the database: \n', error));
-});
+db.sync().then(() => {
+  app.listen(PORT, () => {
+    console.log(`Connection was successfully established, listening at ${PORT}`);
+  });
+}).catch((error) => console.log('Unable to connect to the database: \n', error));
