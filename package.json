@@ -4,7 +4,7 @@
   "description": "Neste projeto foi desenvolvida uma API que se conecta a um banco de dados para gerenciar eventos",
   "main": "src/server.ts",
   "scripts": {
-    "prestart": "tsc",
+    "prestart": "tsc && npx sequelize-cli db:migrate && npx sequelize-cli db:seed:all",
     "start": "node dist/src/server.js",
     "dev": "PORT=3001 ts-node-dev --transpile-only src/server.ts",
     "test": "",
@@ -39,6 +39,7 @@
     "pg": "^8.7.3",
     "supertest": "6.1.6",
     "ts-node-dev": "1.1.8",
+    "tsconfig-paths": "^4.0.0",
     "typescript": "4.4.3"
   },
   "dependencies": {
@@ -48,6 +49,7 @@
     "express-async-errors": "3.1.1",
     "express-validator": "^6.14.2",
     "jsonwebtoken": "8.5.1",
-    "sequelize": "^6.21.3"
+    "sequelize": "^6.21.3",
+    "sequelize-cli": "^6.4.1"
   }
 }
