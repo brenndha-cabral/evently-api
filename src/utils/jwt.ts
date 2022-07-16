@@ -4,7 +4,7 @@ import IUser from '../interfaces/IUser';
 import HttpException from './httpexception';
 import { StatusCode } from './statusResponseEnum';
 
-const { TOKEN_SECRET } = process.env;
+const { JWT_SECRET } = process.env;
 
 const jwtConfig: SignOptions = {
   expiresIn: '6h',
@@ -12,8 +12,7 @@ const jwtConfig: SignOptions = {
 };
 
 const generateToken = (user: Omit<IUser, 'password'>) => {
-  const token = sign({ user }, TOKEN_SECRET, jwtConfig);
-
+  const token = sign(user, JWT_SECRET, jwtConfig);
   return { token };
 };
 
@@ -25,7 +24,7 @@ export const authToken = async (
   token: string | undefined,
 ) => {
   try {
-    const validate = verify(token, TOKEN_SECRET);
+    const validate = verify(token, JWT_SECRET);
 
     return validate;
   } catch (error: any) {
