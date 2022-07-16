@@ -22,6 +22,7 @@ module.exports = {
       },
       adm: {
         type: Sequelize.BOOLEAN,
+        defaultValue: false,
       },
       created: {
         allowNull: false,
