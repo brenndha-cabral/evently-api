@@ -26,11 +26,13 @@ require("express-async-errors");
 require("dotenv/config");
 const express_1 = __importStar(require("express"));
 const config_1 = __importDefault(require("./database/config/config"));
+const errorMiddleware_1 = __importDefault(require("./middlewares/errorMiddleware"));
+const routes_1 = __importDefault(require("./routes"));
 const { PORT } = process.env;
 const app = (0, express_1.default)();
 app.use((0, express_1.json)());
-// app.use('/');
-// app.use('insert error middleware');
+app.use('/', routes_1.default);
+app.use(errorMiddleware_1.default);
 config_1.default.sync().then(() => {
     app.listen(PORT, () => {
         console.log(`Connection was successfully established, listening at ${PORT}`);
