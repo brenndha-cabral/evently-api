@@ -13,7 +13,7 @@ class Users extends Model {
 
   name: string;
 
-  email: number;
+  email: string;
 
   password: string;
 
